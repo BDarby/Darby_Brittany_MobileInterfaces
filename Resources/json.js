@@ -1,7 +1,7 @@
 var info = {
         "Dragon Ball Z Characters": {
             "customHeader": {
-                title: "Dragon Ball Z Characters",
+               // title: "Dragon Ball Z Characters",
                 backgroundColor: "000"
             },
            
@@ -10,7 +10,7 @@ var info = {
                 images: "vegeta.jpg",
             },
             {
-                Who:"Goku, Earth's greatest Hero",
+                who:"Goku, Earth's greatest Hero",
                 images: "goku.jpg",
             },
             {

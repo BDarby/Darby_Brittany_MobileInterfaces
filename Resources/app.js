@@ -16,7 +16,13 @@ var win2 = Ti.UI.createWindow({ //for the json window
 	backgroundColor : "#FF0000"
 });
 
-
+var pic = Ti.UI.createView({
+	backgroundImage : "dbz.jpg",
+	top : 20,
+	width : 250,
+	height : 150,
+	
+});
 
 
 var nav = Ti.UI.iOS.createNavigationWindow({
@@ -28,19 +34,19 @@ var nav = Ti.UI.iOS.createNavigationWindow({
 
 var label = Ti.UI.createLabel({
 	text : "Username",
-	top : 30,
+	top : 190,
 	left : 20
 });
 
 var label2 = Ti.UI.createLabel({
 	text : "Password",
-	top : 120,
+	top : 270,
 	left : 20
 });
 
 var label3 = Ti.UI.createLabel({
 	text : "Confirm Password",
-	top : 210,
+	top : 350,
 	left : 20
 });
 
@@ -50,7 +56,7 @@ var textfield = Titanium.UI.createTextField({
 	hintText : 'Username',
 	keyboardToolbarColor : '#999',
 	keyboardToolbarHeight : 40,
-	top : 50,
+	top : 220,
 	width : 300,
 	height : 35
 });
@@ -60,7 +66,7 @@ var textfield2 = Titanium.UI.createTextField({
 	hintText : 'Password',
 	keyboardToolbarColor : '#999',
 	keyboardToolbarHeight : 40,
-	top : 140,
+	top : 300,
 	width : 300,
 	height : 35
 });
@@ -69,7 +75,7 @@ var textfield3 = Titanium.UI.createTextField({
 	hintText : 'Confirm Password',
 	keyboardToolbarColor : '#999',
 	keyboardToolbarHeight : 40,
-	top : 230,
+	top : 380,
 	width : 300,
 	height : 35
 });
@@ -97,10 +103,11 @@ button2.addEventListener("click", function(){
 	member.open();
 });
 
-//Else if statement for Username
+
 
 win.add(textfield, label);
 win.add(textfield2, label2);
 win.add(textfield3, label3);
-win.add(button,button2);
+win.add(button,button2, pic);
+win.add(pic);
 win.open(); 
